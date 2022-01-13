@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <ul id="menu"></ul>
-    <div id="app"></div>
-    <script type="module" src="./src/main.css"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="main max-w-screen-lg mx-auto">
+    <div class="header mb-2">
+
+      <div class="bg-[#272f54]">
+        <img class="mx-auto p-2" src="images/logo.png" alt="" width="150px">
+      </div>
+
+      <nav>
+        <ul class="flex justify-around bg-amber-600 h-10 p-2 text-cyan-50 font-semibold">
+          <a href="">
+            <li class="hover:underline">Trang chủ</li>
+          </a>
+          <a href="">
+            <li class="hover:underline">Tuyển sinh</li>
+          </a>
+          <a href="">
+            <li class="hover:underline">Chương trình đào tạo</li>
+          </a>
+          <a href="">
+            <li class="hover:underline">Góc sinh viên</li>
+          </a>
+          <a href="">
+            <li class="hover:underline">Tuyển dụng</li>
+          </a>
+          <div class="action">
+            <input type="text">
+            <button class="bg-[#272f54] w-24 hover:bg-red-800" type="submit"> Tìm kiếm </button>
+          </div>
+        </ul>
+
+      </nav>
+
+    </div>
+    <div class="banner">
+      <img src="images/banner.png" alt="">
+    </div>
+    <div id="app">
+    </div>
+    <div class="footer h-10 bg-[#272f54] text-center p-2">
+      <span class="text-cyan-50">TÊN SINH VIÊN</span>
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
 </html>
