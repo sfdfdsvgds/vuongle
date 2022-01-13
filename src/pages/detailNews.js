@@ -10,3 +10,4 @@ const DetailNewsPage = {
         `;
     },
 };
+export default DetailNewsPage;

@@ -1,15 +1,16 @@
 import News from "../components/news";
+import tin from "../components/moi";
 
 const HomePage = {
-    render() {
-        return /* html */`
-            <div class="banner">
-                <img src="https://picsum.photos/1500/400" />
-            </div>
+  render() {
+    return /* html */`
             <div class="news">
                 ${News.render()}
             </div>
+            <div class="news1">
+                ${tin.render()}
+            </div>
         `;
-    },
+  },
 };
 export default HomePage;

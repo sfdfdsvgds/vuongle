@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./main.css">
 
 </head>
 
@@ -15,18 +15,17 @@
     <div class="header mb-2">
 
       <div class="bg-[#272f54]">
-        <img class="mx-auto p-2" src="images/logo.png" alt="" width="150px">
+        <img class="mx-auto p-2" src="img/logo.png" alt="" width="150px">
       </div>
-
       <nav>
         <ul class="flex justify-around bg-amber-600 h-10 p-2 text-cyan-50 font-semibold">
-          <a href="">
+          <a href="/">
             <li class="hover:underline">Trang chủ</li>
           </a>
-          <a href="">
+          <a href="/about">
             <li class="hover:underline">Tuyển sinh</li>
           </a>
-          <a href="">
+          <a href="/product">
             <li class="hover:underline">Chương trình đào tạo</li>
           </a>
           <a href="">
@@ -45,9 +44,10 @@
 
     </div>
     <div class="banner">
-      <img src="images/banner.png" alt="">
+      <img src="img/banner.png" alt="" width="1080px">
     </div>
-    <div id="app">
+    <div class="content mb-4">
+      <div id="app"></div>
     </div>
     <div class="footer h-10 bg-[#272f54] text-center p-2">
       <span class="text-cyan-50">TÊN SINH VIÊN</span>
@@ -55,4 +55,5 @@
   </div>
   <script type="module" src="./src/main.js"></script>
 </body>
+
 </html>
