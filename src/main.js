@@ -12,7 +12,11 @@
 // // template string
 import Navigo from "navigo";
 import HomePage from "./pages/home";
-
+import DetailNewsPage from "./pages/detailNews";
+import dn from "./pages/dn";
+import dk from "./pages/dk";
+import dashboard from "./admin/dashboard";
+import news from "./admin/news";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
   document.getElementById("app").innerHTML = content;
@@ -28,8 +32,23 @@ router.on({
   "/product": () => {
     print("Product Page");
   },
+  "/news/:id": (value) => {
+    console.log(value.data.id);
+    print(DetailNewsPage.render(value.data.id));
+  },
+  "/dn": () => {
+    print(dn.render());
+  },
+  "/dk": () => {
+    print(dk.render());
+  },
+  "/dashboard": () => {
+    print(dashboard.render());
+  },
+  "/news": () => {
+    print(news.render());
+  },
 });
-
 router.notFound(() => print("Not Found Page"));
 
 router.resolve();
